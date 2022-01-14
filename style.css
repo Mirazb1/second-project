@@ -1,8 +1,281 @@
+ /* ---------
+        Google Font
+------------- */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ---------Google Font End --------- */
 
 
 body{
     width: 80%;
     margin: auto;
     background-color: #ffffffe1;
+    font-family: 'Poppins', sans-serif;
 }
 
+/*----------
+    Top Header
+------------ */
+
+.first-header{
+    display: flex;
+}
+
+.first-h1 {
+    margin-top: 40px;
+}
+
+.top-header ul li {
+    list-style: none;
+    float: left;
+    padding: 21px;
+    margin-top: 40px;
+    margin-left: 253px;
+    margin-right: -260px;
+}
+
+/* ---------
+    Top Main
+----------- */
+
+main {
+    margin-top: 50px;
+}
+
+section.container {
+    margin-bottom: 150px;
+    margin-top: 80px;
+    align-items: center;
+}
+
+.main-div {
+    display: flex;
+}
+
+.all-content {
+
+    width: 643px;;
+    margin-top: 50px;
+    color: #3A3A3A;
+}
+
+.all-content h1 {
+    font-size: 42px;
+}
+
+.all-content button {
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+    background: #FF6263;
+    border: none;
+    border-radius: 10px;
+}
+
+.all-content button span {
+    margin-left: 8px;
+    margin-top: 9px;
+    transform:0.9s ease;
+}
+
+.all-content button:hover{
+    margin-left: 30px;
+}
+
+
+
+
+
+.first-img {
+    width: 33%;
+}
+
+
+.first-img img {
+    margin-left: 93px;
+    width: 411px;
+    border: 2px solid #F7F0FF;
+    border-radius: 46%;
+}
+
+.log {
+    border-top: 1px solid #f0ebf5;
+    border-bottom: 1px solid #f0ebf5;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.log img {
+    padding: 25px;
+    height: 22px;
+    margin-left: 20px;
+}
+
+
+/* --------------
+    Popular-Collection
+----------------- */
+
+.populars h1 {
+    margin-top: 80px;
+}
+
+
+
+.popular-collection {
+    margin-top: 100px;
+    display: grid;
+    justify-content: center;
+    margin-left: 50px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.populars-img {
+    border: 1px solid;
+    width: 250px;
+    margin-top: 40px;
+    padding: 25px;
+    background-color: ghostwhite;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 29px -7px grey;
+
+}
+
+.site-img img {
+    width: 250px;
+}
+
+
+i.fas.fa-star.filled {
+    color: orange;
+}
+
+.ster {
+    font-size: 12px;
+}
+
+i.fas.fa-star-half.filled {
+    color: orange;
+}
+
+i.fas.fa-star.none {
+    color: gainsboro;
+}
+
+.site-p {
+    font-size: 13px;
+    color: gray;
+}
+
+.button-text button {
+    margin-top: 30px;
+    padding: 10px;
+    border: none;
+    color: tomato;
+    font-size: 15px;
+    background: border-box;
+    float: right;
+}
+
+.button-text button:hover{
+    margin-right: 32px;
+}
+
+
+
+/* ----------
+        My Degine 
+-------------*/
+
+
+
+.user {
+    margin-top: 145px;
+    text-align: center;
+}
+
+
+.user a{
+	position:relative;
+	outline:none;
+	font-weight:bold;
+	font-size:24px;
+	display:inline-block;
+	padding:8px 25px;
+	color:#2196f3;
+	text-transform:uppercase;
+	letter-spacing:4px;
+	text-decoration:none;
+	border-radius:10px;
+	overflow:hidden;
+	transition:0.9s;
+}
+
+.user a:hover
+
+{
+	color:#255784;
+	background:#2196f3;
+	box-shadow:0 0 10px #2196f3,0 0 40px
+	 #2196f3, 0 0 80px #2196f3
+}
+
+.user a span{
+	position:absolute;
+	display:block;
+}
+
+.user a span:nth-child(1)
+{
+	top:0;
+	left: -100%;
+	width:100%;
+	height:2px;
+	background:linear-gradient(90deg,transparent,#2196f3);
+}
+
+.user a:hover span:nth-child(1)
+{
+	left:100%;
+	transition:2s;
+}
+
+
+.user a span:nth-child(2)
+{
+	top: -100%;
+	right:0;
+	width:2px;
+	height:100%;
+	background:linear-gradient(180deg,transparent,#2196f3);
+}
+
+.user a:hover span:nth-child(2)
+{
+	top:100%;
+	transition:2s;
+	transition-delay:0.25s;
+}
+
+
+
+
+.fother {
+    background-color: gainsboro;
+    text-align: center;
+    margin: 0;
+}
+
+.fother h1 {
+    color: oldlace;
+}
+
+.fother p {
+    font-size: 15px;
+    color: brown;
+}
+
+.fother i {
+    padding: 3px;
+}
