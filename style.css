@@ -7,8 +7,7 @@
 
 
 body{
-    width: 80%;
-    margin: auto;
+
     background-color: #ffffffe1;
     font-family: 'Poppins', sans-serif;
 }
@@ -16,6 +15,11 @@ body{
 /*----------
     Top Header
 ------------ */
+
+header{
+    width: 80%;
+    margin: auto;
+}
 
 .first-header{
     display: flex;
@@ -46,6 +50,8 @@ section.container {
     margin-bottom: 150px;
     margin-top: 80px;
     align-items: center;
+    width: 80%;
+    margin: auto;
 }
 
 .main-div {
@@ -67,19 +73,22 @@ section.container {
     padding: 10px;
     color: white;
     font-size: 16px;
+    margin-top: 33px;
     background: #FF6263;
     border: none;
     border-radius: 10px;
+    transition:0.9s;
 }
 
 .all-content button span {
     margin-left: 8px;
     margin-top: 9px;
-    transform:0.9s ease;
+ 
 }
 
 .all-content button:hover{
     margin-left: 30px;
+    background-color: violet;
 }
 
 
@@ -94,8 +103,13 @@ section.container {
 .first-img img {
     margin-left: 93px;
     width: 411px;
-    border: 2px solid #F7F0FF;
-    border-radius: 46%;
+    background: url(log.svg);
+    background-size: cover;
+    transition: 0.9s;
+}
+
+.first-img img:hover{
+    width: 435px;
 }
 
 .log {
@@ -176,10 +190,12 @@ i.fas.fa-star.none {
     font-size: 15px;
     background: border-box;
     float: right;
+    transition: 0.5s;
 }
 
 .button-text button:hover{
-    margin-right: 32px;
+    margin-right: 38px;
+    color: turquoise;
 }
 
 
@@ -262,7 +278,7 @@ i.fas.fa-star.none {
 
 
 .fother {
-    background-color: gainsboro;
+    background-color: black;
     text-align: center;
     margin: 0;
 }
@@ -278,4 +294,25 @@ i.fas.fa-star.none {
 
 .fother i {
     padding: 3px;
+    color: white;
+}
+
+
+
+@media only screen and (max-width:688px) {
+
+
+    .first-header, .first-main, .first-img, .popular-collection, .fother{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+
+
+    .first-header, .first-main, .first-img, .popular-collection, .fother{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
